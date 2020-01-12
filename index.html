@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<!--
+	Based on Twenty by HTML5 UP https://themewagon.com/themes/twenty-free-responsive-multipage-html5-template/
+-->
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<style>
+			#page-wrapper {
+				background-image: url("assets/css/images/light-tl.svg"),/* url("assets/css/images/light-tr.svg"), url("assets/css/images/light-bl.svg"),*/ url("assets/css/images/light-br.svg"), url("images/default_backdrop.jpg");
+				/*Background Image By https://unsplash.com/@pabloheimplatz from https://unsplash.com/photos/316Bp23oLt8*/
+				background-position: top left,/* top right, bottom left,*/ bottom right, top;
+				background-repeat: no-repeat;
+				background-size: 25em,/* 25em, 25em,*/ 25em, cover;
+			}
+			.shrink-text {
+				font-size: 12;
+				text-align: justify;
+				line-height: 1em;
+			}
+			.img-max, iframe {
+				max-width:  400px;
+				max-height: 400px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+				background-color: white;
+			}
+			iframe {
+				width: 	400px;
+				height: 400px;
+			}
+			.hidden {
+				display:none;
+			}
+			#banner, #main {
+				background-attachment: unset;
+				background-color: unset;
+				background-image:  unset;
+				background-position:  unset;
+				background-repeat:  unset;
+				background-size:  unset;
+			}
+		</style>
+		<script>const NASA_KEY = "DEMO_KEY";</script> <!--Your gonna want to put your NASA Key in here-->
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+			<!-- Banner -->
+			<section id="banner">
+
+				<!--
+					".inner" is set up as an inline-block so it automatically expands
+					in both directions to fit whatever's inside it. This means it won't
+					automatically wrap lines, so be sure to use line breaks where
+					appropriate (<br />).
+				-->
+				<div class="inner">
+					<header>
+						<h2>Home</h2>
+					</header>
+					<p>
+						Hi there!
+						<br/>
+						This is just a simple landing page as I wanted something
+						<br/>
+						better then the stock-standard <em>"You're all setup!"</em> page
+						<br/>
+						all the web servers come with and I wanted something a bit
+						<br/>
+						different. So this page will grab you four random images from
+						<br/>
+						NASA's <a target="_blank" href="https://apod.nasa.gov/apod/astropix.html">Astronomy Picture of the Day</a> service. So if you want space.
+						<br/>
+						<h3>Hit it!</h3>
+					</p>
+					<footer>
+						<ul class="buttons stacked">
+							<li><a class="button fit scrolly" onclick=doNasaThing()>Show me the Space!</a></li>
+						</ul>
+					</footer>
+
+				</div>
+
+			</section>
+			<!-- Main -->
+				<article id="main" class="hidden">
+					<!-- Three -->
+						<section class="wrapper style3 container special">
+							<div class="row">
+								<div class="col-6 col-12-narrower">
+									<section>
+										<a id="img1-a" href="#" class="image featured" target="_blank"><img class="img-max" id="img1-img" src="" alt=""/></a>
+										<header>
+											<h3 id="img1-h3"></h3>
+										</header>
+										<p id="img1-p" class="shrink-text"></p>
+									</section>
+								</div>
+
+								<div class="col-6 col-12-narrower">
+									<section>
+										<a id="img2-a" href="#" class="image featured" target="_blank"><img class="img-max" id="img2-img" src="" alt=""/></a>
+										<header>
+											<h3 id="img2-h3"></h3>
+										</header>
+										<p id="img2-p" class="shrink-text"></p>
+									</section>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-6 col-12-narrower">
+									<section>
+										<a id="img3-a" href="#" class="image featured" target="_blank"><img class="img-max" id="img3-img" src="" alt=""/></a>
+										<header>
+											<h3 id="img3-h3"></h3>
+										</header>
+										<p id="img3-p" class="shrink-text"></p>
+									</section>
+								</div>
+
+								<div class="col-6 col-12-narrower">
+									<section>
+										<a id="img4-a" href="#" class="image featured" target="_blank"><img class="img-max" id="img4-img" src="" alt=""/></a>
+										<header>
+											<h3 id="img4-h3"></h3>
+										</header>
+										<p id="img4-p" class="shrink-text"></p>
+									</section>
+								</div>
+							</div>
+							<footer class="major">
+								<ul class="buttons">
+									<li><a href="" class="button" id="todays-aprod-url" target="_blank">Todays Photo</a></li>
+								</ul>
+							</footer>
+						</section>
+				</article>
+
+			<!-- Footer -->
+			<footer id="footer">
+
+				<ul class="icons">
+					<!--li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></!--li>
+					<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands circle fa-google-plus-g"><span class="label">Google+</span></a></li-->
+					<li><a href="https://github.com/calw20/NASA-Landing" class="icon brands circle fa-github" target="_blank"><span class="label">Github</span></a></li>
+					<!--li><a href="#" class="icon brands circle fa-dribbble"><span class="label">Dribbble</span></a></li-->
+				</ul>
+
+				<ul class="copyright">
+					&copy; Cal.W 2020
+				</ul>
+
+			</footer>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				function randomDate(start, end) {
+					return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+				}
+				
+				function getNasaPODJSON(key, date, callback){
+					if (date == null) date = randomDate(new Date("2015-01-01"), new Date())
+					var fmDate = date.toISOString().slice(0,10)
+					var xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function() {
+						if (this.readyState == 4 && this.status == 200) {
+							callback(JSON.parse(this.responseText))
+						} else if (this.status != 200){
+							console.error(this)
+						}
+					};
+					xhttp.open("GET", "https://api.nasa.gov/planetary/apod?date="+fmDate+"&api_key="+NASA_KEY, true);
+					xhttp.send();
+				}
+				
+				function setNASAPick(podJSON, pic){
+					if (podJSON['media_type'] == "video"){
+						var iframeNode = document.createElement("iframe");
+						iframeNode.setAttribute("src", podJSON['url']);
+						iframeNode.setAttribute("allowfullscreen");
+						var doc = document.getElementById("img"+pic+"-a").parentElement
+						doc.replaceChild(iframeNode, doc.childNodes[0])
+					} else {
+						document.getElementById("img"+pic+"-img").src = podJSON['url']
+						document.getElementById("img"+pic+"-a").href = podJSON['hdurl']
+					}
+					
+					document.getElementById("img"+pic+"-h3").innerHTML = podJSON['title']
+					document.getElementById("img"+pic+"-p").innerHTML = podJSON['explanation'] + "<br><br><a target=\"_blank\" href=\""+podJSON['url']+"\">NASA APOD: "+podJSON['date']+"</a>"
+					if (podJSON.hasOwnProperty('copyright')) document.getElementById("img"+pic+"-p").innerHTML += "<br>Copyright: "+podJSON['copyright']
+				}
+
+				//Get other images
+				function doNasaThing(){
+					var iframes = document.querySelectorAll('iframe');
+					for (var i = 0; i < iframes.length; i++) {
+						iframes[i].parentNode.removeChild(iframes[i]);
+					}
+					if (document.getElementById("todays-aprod-url").href != "")
+						getNasaPODJSON(NASA_KEY, new Date(), function(x){
+							document.getElementById("page-wrapper").style.backgroundImage = "url('assets/css/images/light-tl.svg'), url('assets/css/images/light-br.svg'), url('" + x["url"] + "')"
+							document.getElementById("todays-aprod-url").href = x["url"]
+						});
+					getNasaPODJSON(NASA_KEY, null, (x) => setNASAPick(x, 1));
+					getNasaPODJSON(NASA_KEY, null, (x) => setNASAPick(x, 2));
+					getNasaPODJSON(NASA_KEY, null, (x) => setNASAPick(x, 3));
+					getNasaPODJSON(NASA_KEY, null, (x) => setNASAPick(x, 4));
+					document.getElementById("main").className = ""
+				}
+
+			</script>
+
+	</body>
+</html>
